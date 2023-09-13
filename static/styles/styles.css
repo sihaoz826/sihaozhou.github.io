@@ -1,56 +1,56 @@
 /* Content Container Styles */
 .content-container {
-    align-items: start; /* Aligns both the intro and the image at their top edges */
-    display: flex; /* Enable flexbox layout */
-    justify-content: space-between; /* Places a bit of space between the intro and the image */
+    align-items: start; 
+    display: flex; 
+    justify-content: space-between; 
 }
 
 /* Introduction Styles */
 .intro {
-    flex: 2; /* Takes up two thirds of the available space */
-    padding: 40px; /* Adds a bit of space between the intro and the border */
+    flex: 2; 
+    padding: 40px; 
 }
 
 .intro p {
-    margin-bottom: 16px; /* Reduce the space between paragraphs */
+    margin-bottom: 16px; 
 }
 
 /* Introduction Header Styles */
 .intro-header {
-    font-size: 3vw; /* Adjust based on the viewport width */
-    font-weight: bold; /* Make it bold */
+    font-size: 3vw; 
+    font-weight: bold; 
 }
 
 /* Introduction Details Styles */
 .intro-details {
-    font-size: 2vw; /* Adjust based on the viewport width */
-    font-weight: bold; /* Make it bold */
+    font-size: 2vw; 
+    font-weight: bold; 
 }
 
 /* Introduction Experience Styles */
 .intro-experience {
-    font-size: 1.5vw; /* Adjust based on the viewport width */
-    font-weight: 500; /* Semi-bold */
+    font-size: 1.5vw; 
+    font-weight: 500; 
 }
 
 /* Highlight Styles */
 .highlight {
-    color: #0e0d0d; /* a shade of dark for highlighting */
+    color: #0e0d0d; 
     font-weight: bold;
 }
 
 /* Image Container Styles */
 .image-container {
-    flex: 1; /* Takes up one third of the available space */
-    overflow: hidden; /* If the image is larger than the container, it will be clipped */
+    flex: 1; 
+    overflow: hidden;
 }
 
 .image-container img {
-    height: auto; /* Keeps the image's original aspect ratio */
-    padding-top: 20px; /* Adds a bit of space between the image and the border */
-    padding-bottom: 20px; /* Adds a bit of space between the image and the border */
-    padding-right: 60px; /* Adds a bit of space between the image and the border */
-    width: 100%; /* Ensures the image will scale to fit its container */
+    height: auto; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-right: 60px; 
+    width: 100%; 
 }
 
 
@@ -144,9 +144,13 @@ footer {
 
 /* Contact Form Styles */
 .contact-form {
+    background-color: beige;
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
+    border: 1px solid #333; /* Add a border with 2px width and dark gray color (#333) */
+    padding: 10px; /* Add some padding to give space between content and border */
+    box-sizing: border-box;
 }
 
 .contact-form label,
@@ -158,6 +162,13 @@ footer {
     box-sizing: border-box;
 }
 
+.location-header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
 /* Adjust iframe styles as necessary */
 iframe {
     width: 100%;
@@ -166,8 +177,13 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Import the Lobster font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 /* Navbar Styles */
 .navbar {
+    font-family: 'Lobster', cursive;
     background-color: #333;
     overflow: hidden;
 }
@@ -199,6 +215,7 @@ iframe {
 
 /* Footer Styles */
 footer {
+    font-family: 'Lobster', cursive;
     padding: 20px;
     background-color: #f2f2f2;
     text-align: center;
